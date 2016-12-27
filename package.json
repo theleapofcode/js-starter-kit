@@ -5,8 +5,9 @@
   "scripts": {
     "nsp:check": "nsp check",
     "start:srcserver": "node buildScripts/srcServer.js",
+    "start": "npm-run-all nsp:check start:srcserver",
     "localtunnel": "lt --port 3000",
-    "share": "npm-run-all --parallel start:srcserver localtunnel"
+    "share": "npm-run-all --parallel start localtunnel"
   },
   "repository": {
     "type": "git",

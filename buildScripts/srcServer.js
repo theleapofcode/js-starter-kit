@@ -14,6 +14,7 @@ app.listen(port, function (err) {
   if (err) {
     console.log(chalk.red('Error in starting dev server'), err);
   } else {
+    console.log(chalk.green('Starting app in dev mode'));
     open('http://localhost:' + port);
   }
 });

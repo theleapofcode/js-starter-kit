@@ -23,3 +23,6 @@ To maintain consistency of Editor configurations, use [EditorConfig](http://edit
 
 ### Sharing Development Server
 [LocalTunnel](https://localtunnel.github.io/www/) can be used to share a development server over internet.
+
+## Build Automation
+[NPM Scripts](https://www.npmjs.com/) is the easiest option for automating build tasks. No need of Grunt or Gulp. 
