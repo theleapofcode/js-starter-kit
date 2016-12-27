@@ -32,4 +32,7 @@ To maintain consistency of Editor configurations, use [EditorConfig](http://edit
 
 ## Bundling
 [Webpack](https://webpack.github.io/) is the most versatile and configurable bundler.
+
+## Linting
+[ESLint](http://eslint.org/) is the most versatile and configurable linter.
   
