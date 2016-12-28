@@ -35,4 +35,10 @@ To maintain consistency of Editor configurations, use [EditorConfig](http://edit
 
 ## Linting
 [ESLint](http://eslint.org/) is the most versatile and configurable linter.
-  
+
+## HTTP Client
+[Fetch](https://github.com/github/fetch) is the new standard for HTTP/AJAX calls. Use a [polyfill](https://qa.polyfill.io/v2/docs/) to support all browsers.
+
+### Mocking HTTP Server
+To mock HTTP server for testing, use [JSON-server](https://github.com/typicode/json-server) and [JSON-schema-faker](https://github.com/json-schema-faker/json-schema-faker).
+

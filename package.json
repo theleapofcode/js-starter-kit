@@ -1,17 +1,20 @@
 {
   "name": "js-starter-kit",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Starter kit for JS project",
   "scripts": {
     "nsp:check": "nsp check",
     "srcserver:start": "babel-node buildScripts/srcServer.js",
-    "start": "npm-run-all --parallel nsp:check srcserver:start lint:watch test:watch",
+    "start": "npm-run-all --parallel nsp:check srcserver:start lint:watch test:watch mockapi:start",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel start localtunnel",
     "lint": "esw webpack.config.*, src, buildScripts --color",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "mockdata:generate": "babel-node buildScripts/generateMockData.js",
+    "premockapi:start": "npm run mockdata:generate",
+    "mockapi:start": "json-server --watch src/api/db.json --port 3001"
   },
   "repository": {
     "type": "git",
@@ -42,6 +45,8 @@
     "eslint-watch": "^2.1.14",
     "express": "^4.14.0",
     "jsdom": "^9.9.1",
+    "json-schema-faker": "^0.4.0",
+    "json-server": "^0.9.4",
     "localtunnel": "^1.8.2",
     "mocha": "^3.2.0",
     "npm-run-all": "^3.1.2",
@@ -51,5 +56,8 @@
     "voca": "^1.1.0",
     "webpack": "^1.14.0",
     "webpack-dev-middleware": "^1.9.0"
+  },
+  "dependencies": {
+    "whatwg-fetch": "^2.0.1"
   }
 }

@@ -19,6 +19,15 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '../src/index.html')));
 
+app.get('/users', (req, res) => {
+  // Hard coding for simplicity. Pretend this hits a real database
+  res.json([
+    { "id": 1, "firstName": "Mark", "lastName": "Hamill", "email": "mhamill@starwars.com" },
+    { "id": 2, "firstName": "Harrison", "lastName": "Ford", "email": "hford@starwars.com" },
+    { "id": 3, "firstName": "Carrie", "lastName": "Fisher", "email": "cfisher@starwars.com" }
+  ]);
+});
+
 app.listen(port, err => {
   if (err) {
     console.log(chalk.red('Error in starting dev server'), err);
