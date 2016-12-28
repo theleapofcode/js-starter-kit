@@ -64,5 +64,5 @@ Webpack ExtractTextPlugin to bundle and minify CSS.
 ## Continuous Integration
 
 ### Travis CI
-Integrate with Travis CI.
+Integrate with [Travis CI](https://travis-ci.org/).
 
