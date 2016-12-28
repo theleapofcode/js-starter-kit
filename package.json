@@ -1,6 +1,6 @@
 {
   "name": "js-starter-kit",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "Starter kit for JS project",
   "scripts": {
     "nsp:check": "nsp check",
@@ -50,6 +50,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-watch": "^2.1.14",
     "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.24.1",
     "jsdom": "^9.9.1",
     "json-schema-faker": "^0.4.0",

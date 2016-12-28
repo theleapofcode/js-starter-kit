@@ -44,12 +44,18 @@ To mock HTTP server for testing, use [JSON-server](https://github.com/typicode/j
 
 ## Production Build
 
-### Minification
-Webpack uglify plugin to minify JS. Webpack HTML plugin to minify and bundle HTML.
+### JS Minification
+Webpack Uglify plugin to minify JS.
+
+### HTML Bundling and Minification
+Webpack HTML plugin to minify and bundle HTML.
 
 ### Bundle Splitting
-Webpack used to split vendor and application JS bundles so that they can be cached separately.
+Webpack CommonsChunkPlugin used to split vendor and application JS bundles so that they can be cached separately.
 
 ### Cache Busting
-Webpack used to add hash to filenames to bust cache.
+Webpack MD5Hash plugin used to add hash to filenames to bust cache.
+
+### CSS Bundling and Minification
+Webpack ExtractTextPlugin to bundle and minify CSS.
 
