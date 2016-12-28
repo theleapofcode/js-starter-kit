@@ -42,3 +42,8 @@ To maintain consistency of Editor configurations, use [EditorConfig](http://edit
 ### Mocking HTTP Server
 To mock HTTP server for testing, use [JSON-server](https://github.com/typicode/json-server) and [JSON-schema-faker](https://github.com/json-schema-faker/json-schema-faker).
 
+## Production Build
+
+### Minification
+Webpack uglify plugin to minify JS. Webpack HTML plugin to minify and bundle HTML.
+
