@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/theleapofcode/js-starter-kit.svg?branch=master)](https://travis-ci.org/theleapofcode/js-starter-kit)
+
 # js-starter-kit
 Starter kit for JS project
 
@@ -58,4 +60,9 @@ Webpack MD5Hash plugin used to add hash to filenames to bust cache.
 
 ### CSS Bundling and Minification
 Webpack ExtractTextPlugin to bundle and minify CSS.
+
+## Continuous Integration
+
+### Travis CI
+Integrate with Travis CI.
 
