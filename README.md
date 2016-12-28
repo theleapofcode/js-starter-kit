@@ -47,3 +47,6 @@ To mock HTTP server for testing, use [JSON-server](https://github.com/typicode/j
 ### Minification
 Webpack uglify plugin to minify JS. Webpack HTML plugin to minify and bundle HTML.
 
+### Bundle Splitting
+Webpack used to split vendor and application JS bundles so that they can be cached separately.
+
